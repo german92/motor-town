@@ -16,3 +16,17 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+
+    .motor-town {
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 34px;
+      padding-left: 10px;
+      padding-right: 8px;
+    }
+
+    .motor-town:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
