@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   get 'welcome/store'
+  get 'welcome/garage'
+  get 'welcome/service'
 
   root 'welcome#index'
 

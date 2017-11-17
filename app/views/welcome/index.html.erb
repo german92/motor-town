@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <%= image_tag "motor_town.jpg", class: "mt-image"%>
+          <%= image_tag "motor_town.jpg", class: "info-image"%>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
         <p>Contamos con el mejor personal para garantizar que su carro le trabaje de forma optima y pueda </p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
-          welcome_store_path,
+          welcome_garage_path,
           class: "btn btn-secondary",
           role: "button"
           %>
@@ -51,7 +51,7 @@
         <p>En Motor Town nos especialicamos por dar el mejor servicio y en el menor tiempo posible a nuestros clientes.</p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
-          welcome_store_path,
+          welcome_service_path,
           class: "btn btn-secondary",
           role: "button"
           %>
@@ -61,5 +61,9 @@
     </div>
 
   </div> <!-- /container -->
+
+  <div class="container" id="location">
+
+  </div>
 
 </main>
