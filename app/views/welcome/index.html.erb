@@ -4,31 +4,61 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-3">Un mundo de accesorios...</h1>
-      <p>Somos un taller con mas de 15 anos de experiencia en Costa Rica. </br>
-        Contamos con una gran variedad de accesorios y servicios para su vehiculo.</p>
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Somos un taller con mas de 15 anos de experiencia en Costa Rica.
+            </br>
+            Contamos con una gran variedad de accesorios y servicios para su vehiculo.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag "motor_town.jpg", class: "mt-image"%>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="acerca">
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
         <h2>Tienda</h2>
         <p>Tenemos todo tipo de accesorios para su vehiculo, desde Halogenos LED y alfombras hasta estribos y mataburros.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p>
+          <%= link_to "Ver detalles &raquo;".html_safe,
+          welcome_store_path,
+          class: "btn btn-secondary",
+          role: "button"
+          %>
+        </p>
       </div>
+
       <div class="col-md-4">
         <h2>Taller</h2>
         <p>Contamos con el mejor personal para garantizar que su carro le trabaje de forma optima y pueda </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p>
+          <%= link_to "Ver detalles &raquo;".html_safe,
+          welcome_store_path,
+          class: "btn btn-secondary",
+          role: "button"
+          %>
+        </p>
       </div>
+
       <div class="col-md-4">
         <h2>Servicio</h2>
         <p>En Motor Town nos especialicamos por dar el mejor servicio y en el menor tiempo posible a nuestros clientes.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p>
+          <%= link_to "Ver detalles &raquo;".html_safe,
+          welcome_store_path,
+          class: "btn btn-secondary",
+          role: "button"
+          %>
+        </p>
       </div>
-    </div>
 
+    </div>
 
   </div> <!-- /container -->
 
