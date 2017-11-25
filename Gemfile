@@ -45,6 +45,9 @@ gem 'simple_form'
 # Send e-mail straight from forms in Rails with I18n, validations, attachments and request information
 gem 'mail_form'
 
+# ReCaptcha helpers for ruby apps
+gem "recaptcha", require: "recaptcha/rails"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
