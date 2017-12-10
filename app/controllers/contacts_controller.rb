@@ -10,10 +10,10 @@ class ContactsController < ApplicationController
     if verify_recaptcha
       if @contact.deliver
         flash.now[:error] = nil
-        flash.now[:notice] = 'Thank you for your message!'
+        flash.now[:notice] = 'Gracias por su mensaje. Lo estaremos contactando pronto.'
       else
-        flash.now[:error] = 'Cannot send message.'
-        render welcome: "_new"
+        flash.now[:error] = 'No se pudo enviar su mensaje.'
+        render welcome: "welcome/index"
       end
       
     end
