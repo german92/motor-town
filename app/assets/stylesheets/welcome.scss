@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-main {
-	color: blue;
+
+.container {
+	padding-top: 80px;
+	padding-bottom: 40px;
 }
+
+.static-page {
+	padding-top: 140px;
+
+}
+
+.store-info {
+	padding-bottom: 15px;
+}
+
+.info-image {
+	height: 190px;
+	width: 240px;
+}
+

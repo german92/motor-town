@@ -39,12 +39,24 @@ gem 'bootstrap', '~> 4.0.0.beta2.1'
 # Bootstrap requires jquery
 gem 'jquery-rails'
 
+# Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
+gem 'simple_form'
+
+# Send e-mail straight from forms in Rails with I18n, validations, attachments and request information
+gem 'mail_form'
+
+# ReCaptcha helpers for ruby apps
+gem "recaptcha", require: "recaptcha/rails"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # Preview mail in the browser instead of sending.
+  gem "letter_opener"
 end
 
 group :development do
