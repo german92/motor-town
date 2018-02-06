@@ -33,6 +33,9 @@ Rails.application.configure do
 
   # Delivery method for letter_opener gem
   config.action_mailer.delivery_method = :letter_opener
+  
+  # Defined default url options in your environments files.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

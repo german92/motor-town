@@ -3,49 +3,54 @@
   <head>
     <title>Motor Town | Un mundo de accesorios...</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <%= link_to "Motor Town", root_path, class: "nav-item motor-town" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#acerca">Acerca</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">Donde estamos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactenos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mas...</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <%= link_to "Tienda", welcome_store_path, class: "dropdown-item" %>
+            <%= link_to "Taller", welcome_garage_path, class: "dropdown-item" %>
+            <%= link_to "Servicio", welcome_service_path, class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <%= link_to "Motor Town", root_path, class: "nav-item motor-town" %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#acerca">Acerca</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#location">Donde estamos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactenos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mas...</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <%= link_to "Tienda", welcome_store_path, class: "dropdown-item" %>
-              <%= link_to "Taller", welcome_garage_path, class: "dropdown-item" %>
-              <%= link_to "Servicio", welcome_service_path, class: "dropdown-item" %>
-            </div>
-          </li>
-        </ul>
+      <div>
+        <% if user_signed_in? %>
+          <%= link_to 'Cerrar Sesion', destroy_user_session_path, method: :delete, class: "nav-item nav-link" %>
+        <% else %>
+          <%= link_to 'Ingresar', new_user_session_path, class: "nav-link disabled" %>
+        <% end %>
       </div>
-    </nav>
+
+    </div>
+    
+  </nav>
 
   <body>
     <%= yield %>
   </body>
-
-
-    <footer class="container">
-      <hr>
-      <p>&copy; Motor Town 2017</p>
-    </footer>
-
-
+  <footer class="container">
+    <hr>
+    <p>&copy; Motor Town 2017</p>
+  </footer>
 </html>
