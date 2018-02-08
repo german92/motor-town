@@ -46,7 +46,14 @@ gem 'simple_form'
 gem 'mail_form'
 
 # ReCaptcha helpers for ruby apps
-gem "recaptcha", require: "recaptcha/rails"
+gem 'recaptcha', require: 'recaptcha/rails'
+
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
+
+# Capistrano is a utility and framework for executing commands in parallel on multiple remote machines, via SSH.
+gem 'capistrano', '~> 3.10', '>= 3.10.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,6 +64,13 @@ group :development, :test do
 
   # Preview mail in the browser instead of sending.
   gem "letter_opener"
+
+  # Rails specific Capistrano tasks
+  gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+  # Passenger support for Capistrano 3.x
+  gem 'capistrano-passenger', '~> 0.2.0'
+  # RVM integration for Capistrano
+  gem 'capistrano-rvm'
 end
 
 group :development do

@@ -1,13 +1,12 @@
 <main role="main">
-
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-3">Un mundo de accesorios...</h1>
-      <div class="row">
-        <div class="col-md-8">
+      <div class="row introduction-information">
+        <div class="col-md-8 introduction-text">
           <p>
-            Somos un taller con mas de 15 anos de experiencia en Costa Rica.
+            Somos una autodecoracion y taller con mas de 15 anos de experiencia en Costa Rica.
             </br>
             Contamos con una gran variedad de accesorios y servicios para su vehiculo.
           </p>
@@ -18,7 +17,6 @@
       </div>
     </div>
   </div>
-
   <div class="container" id="acerca">
     <!-- Example row of columns -->
     <div class="row">
@@ -33,10 +31,9 @@
           %>
         </p>
       </div>
-
       <div class="col-md-4">
         <h2>Taller</h2>
-        <p>Contamos con el mejor personal para garantizar que su carro le trabaje de forma optima y pueda </p>
+        <p>Ofrecemos gran cantidad de servicios a los mejores precios. Visitenos para sus revisiones mensuales! </p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
           welcome_garage_path,
@@ -45,10 +42,9 @@
           %>
         </p>
       </div>
-
       <div class="col-md-4">
-        <h2>Servicio</h2>
-        <p>En Motor Town nos especialicamos por dar el mejor servicio y en el menor tiempo posible a nuestros clientes.</p>
+        <h2>Mision</h2>
+        <p>En Motor Town nos destacamos por nuestro exelente trato a los clientes y nuestro compromiso con el medio ambiente.</p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
           welcome_service_path,
@@ -57,51 +53,48 @@
           %>
         </p>
       </div>
-
     </div>
-
-  </div> <!-- /container -->
-
-  <hr>
-
-  <div class="container" id="location">
-    <h1 class="display-4">Horario</h1>
-
-    <div class="row">
-
-      <div class="col-6">
-        <ul>
-          <li>Lunes a Viernes: 8:00am - 6:00pm</li>
-          <li>Sabado:  8:00am - 3:00pm</li>
-        </ul>
+    </div> <!-- /container -->
+    <hr>
+    <div class="container" id="location">
+      <h1 class="display-4">Horario</h1>
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li><b>Lunes a Viernes:</b> 8:00am - 6:00pm</li>
+            <li><b>Sabado:</b> 8:00am - 3:00pm</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li><b>Tel:</b> 2232-2313</li>
+            <li><b>Direccion:</b> 150mts sur de La Pozuelo, La Uruca</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="col-6">
-        <ul>
-          <li>Tel: 2232-2313</li>
-          <li>Direccio: 150mts sur de La Pozuelo, La Uruca</li>
-        </ul>
+      <div class="row">
+        <div class="col-12">
+          <%= image_tag "location.png", class: "img-fluid" %>
+        </div>
       </div>
-
     </div>
-
-    <div class="row">
-      <div class="col-12">
-        <%= image_tag "location.png", class: "img-fluid" %>
+    <hr>
+    <div class="container" id="contact">
+      <h1 class="display-4">Contactenos</h1>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li><b>Tel:</b> 2232-2313</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li><a href="https://www.facebook.com/motortowncr">facebook.com/motortowncr</a></li>
+          </ul>
+        </div>
       </div>
-
+      <%= render "contacts/new" %>
+      
     </div>
-
-  </div>
-
-
-  <hr>
-
-  <div class="container" id="contact">
-    <h1 class="display-4">Contactenos</h1>
-
-    <%= render "contacts/new" %>
-    
-  </div>
-
-</main>
+  </main>
