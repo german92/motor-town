@@ -9,7 +9,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+
+# Use Postgres as the database
+gem 'pg'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -52,8 +55,6 @@ gem 'recaptcha', require: 'recaptcha/rails'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 
-# Capistrano is a utility and framework for executing commands in parallel on multiple remote machines, via SSH.
-gem 'capistrano', '~> 3.10', '>= 3.10.1'
 
 
 group :development, :test do
@@ -66,12 +67,17 @@ group :development, :test do
   # Preview mail in the browser instead of sending.
   gem "letter_opener"
 
+  # Capistrano is a utility and framework for executing commands in parallel on multiple remote machines, via SSH.
+  gem 'capistrano', '~> 3.10', '>= 3.10.1'
   # Rails specific Capistrano tasks
   gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
   # Passenger support for Capistrano 3.x
   gem 'capistrano-passenger', '~> 0.2.0'
   # RVM integration for Capistrano
   gem 'capistrano-rvm'
+
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :development do
@@ -81,10 +87,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-
-  # Use Postgres as the database
-  gem 'pg'
-
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
