@@ -4,7 +4,7 @@ class Contact < MailForm::Base
   attribute :email,     validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :contact_number
   attribute :message
-  validates :message,   length: { in: 15..2000 }
+  validates :message,   length: { in: 5..2000 }
   attribute :nickname,  :captcha  => true
 
 
