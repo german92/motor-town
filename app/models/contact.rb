@@ -11,7 +11,7 @@ class Contact < MailForm::Base
   def headers
     {
       subject: 'Contacto motortowncr.com',
-      to: 'motor_uruca@watersonn.',
+      to: 'motor_uruca@watersonn.com',
       from: %("#{name}" <#{email}>)
     }
   end
