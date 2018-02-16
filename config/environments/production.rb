@@ -64,11 +64,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'motortowncr.com',
-    user_name:            ENV["SMTP_USERNAME"],
-    password:             ENV["SMTP_PASSWORD"],
+    address:              Rails.application.secrets[:SMTP_HOST],
+    port:                 Rails.application.secrets[:SMTP_PORT],
+    domain:               Rails.application.secrets[:SMTP_DOMAIN],
+    user_name:            Rails.application.secrets[:SMTP_USERNAME],
+    password:             Rails.application.secrets[:SMTP_PASSWORD],
     authentication:       'plain',
     enable_starttls_auto: true  
   }
