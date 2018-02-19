@@ -62,6 +62,17 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "motor-town_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              Rails.application.secrets[:SMTP_HOST],
+    port:                 Rails.application.secrets[:SMTP_PORT],
+    domain:               Rails.application.secrets[:SMTP_DOMAIN],
+    user_name:            Rails.application.secrets[:SMTP_USERNAME],
+    password:             Rails.application.secrets[:SMTP_PASSWORD],
+    authentication:       'plain',
+    enable_starttls_auto: true  
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
