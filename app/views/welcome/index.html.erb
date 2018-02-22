@@ -1,4 +1,26 @@
 <main role="main">
+
+
+  <div class="container-fluid text-center welcome-intro">
+    <div class="row welcome-slogan">
+      <div class="col align-self-center">
+        <h1>Un mundo de accesorios...</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-1">
+        <%= link_to "https://www.facebook.com/motortowncr", target: "_blank" do %>
+          <%= image_tag "facebook-icon", alt: "Facebook icon"%>
+        <% end %>
+      </div>
+      <div class="col-1">
+        <%= link_to "https://www.instagram.com/motortowncr/", target: "_blank" do %>
+          <%= image_tag "instagram-icon", alt: "Instagram icon"%>
+        <% end %>      </div>
+    </div>
+  </div>
+
+
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -74,7 +96,11 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <%= image_tag "location.png", class: "img-fluid" %>
+          
+          <%= link_to "https://www.google.co.cr/maps/place/Motor+Town/@9.9510106,-84.1138038,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0fb4ffec9272d:0x50a953eb0b44805c!8m2!3d9.9510053!4d-84.1116151?hl=en", target: "_blank" do %>
+            <%= image_tag "location.png", class: "img-fluid", alt: "Direccion de Motor Town"%>
+          <% end %>
+
         </div>
       </div>
     </div>

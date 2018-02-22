@@ -3,29 +3,53 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// ********************************** GENERAL SECTION **********************************
+
+
 .container {
-	padding-top: 80px;
-	padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
+// ********************************** END GENERAL SECTION **********************************
+
+
+// ********************************** WELCOME SECTION **********************************
+.welcome-intro {
+  background-image: image-url("car-repair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  color: #FFFFFF;
+}
+
+.welcome-slogan {
+  width: auto;
+  height: 400px;
+}
+
+// ********************************** END WELCOME SECTION **********************************
+
+
 .static-page {
-	padding-top: 140px;
+  padding-top: 140px;
 
 }
 
 .store-info {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .info-image {
-	height: 190px;
-	width: 240px;
+  height: 190px;
+  width: 240px;
 }
 
 .introduction-text {
-	margin: auto;
+  margin: auto;
 }
 
 .introduction-information {
-	margin-top: 40px;
+  margin-top: 40px;
 }
