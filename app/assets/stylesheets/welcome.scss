@@ -11,6 +11,11 @@
   padding-bottom: 40px;
 }
 
+.social-media-icon {
+  max-height: 40px;
+  max-width: 40px;
+}
+
 // ********************************** END GENERAL SECTION **********************************
 
 
@@ -30,6 +35,28 @@
 }
 
 // ********************************** END WELCOME SECTION **********************************
+
+// ********************************** ABOUT SECTION **********************************
+
+.about-container {
+  background-image: image-url("carbon-fiber.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 650px;
+  color: #FFFFFF;
+}
+
+.about-title {
+  margin-top: 8%;
+  margin-bottom: 80px;
+}
+
+.about-icon {
+  max-height: 60px;
+  margin-bottom: 40px;
+}
+
+// ********************************** END ABOUT SECTION **********************************
 
 
 .static-page {
