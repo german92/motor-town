@@ -1,61 +1,86 @@
 <main role="main">
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-3">Un mundo de accesorios...</h1>
-      <div class="row introduction-information">
-        <div class="col-md-8 introduction-text">
-          <p>
-            Somos una autodecoracion y taller con mas de 15 anos de experiencia en Costa Rica.
-            </br>
-            Contamos con una gran variedad de accesorios y servicios para su vehiculo.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <%= image_tag "motor_town.jpg", class: "info-image"%>
-        </div>
+
+
+ <!-- ***************** WELCOME SECTION *****************  -->
+
+  <div class="container-fluid text-center welcome-intro">
+    <div class="row welcome-slogan">
+      <div class="col align-self-center">
+        <h1>Un mundo de accesorios...</h1>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-1">
+        <%= link_to "https://www.facebook.com/motortowncr",  target: "_blank" do %>
+          <%= image_tag "facebook-icon", class: "social-media-icon", alt: "Facebook icon"%>
+        <% end %>
+      </div>
+      <div class="col-1">
+        <%= link_to "https://www.instagram.com/motortowncr/", class: "social-media-icon", target: "_blank" do %>
+          <%= image_tag "instagram-icon", class: "social-media-icon", alt: "Instagram icon"%>
+        <% end %>      </div>
+    </div>
   </div>
-  <div class="container" id="acerca">
-    <!-- Example row of columns -->
+
+   <!-- ***************** END WELCOME SECTION *****************  -->
+
+  <!-- ***************** ABOUT SECTION *****************  -->
+  
+  <div class="container-fluid text-center about-container" id="about">
     <div class="row">
-      <div class="col-md-4">
-        <h2>Tienda</h2>
-        <p>Tenemos todo tipo de accesorios para su vehiculo, desde Halogenos LED y alfombras hasta estribos y mataburros.</p>
+      <div class="col align-self-center about-title">
+        <h2>&iquest;Por qu&eacute; somos los mejores?</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-2 ml-2 mr-2">
+        <%= image_tag "variety-icon.png", class: "about-icon", alt: "Variety icon"%>
+        <h4>VARIEDAD</h4>
+        <p>Tenemos todo tipo de accesorios y servicios para todo tipo de aventura o trabajo</p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
           welcome_store_path,
-          class: "btn btn-secondary",
+          class: "btn btn-dark",
           role: "button"
           %>
         </p>
       </div>
-      <div class="col-md-4">
-        <h2>Taller</h2>
-        <p>Ofrecemos gran cantidad de servicios a los mejores precios. Visitenos para sus revisiones mensuales! </p>
+      <div class="col-2 ml-2 mr-2">
+        <%= image_tag "service-icon.png", class: "about-icon", alt: "Service icon"%>
+        <h4>SERVICIOS</h4>
+        <p>Ofrecemos una amplia variedad de servicios, ya sean b&aacute;sicos o modificaciones</p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
           welcome_garage_path,
-          class: "btn btn-secondary",
+          class: "btn btn-dark",
           role: "button"
           %>
         </p>
       </div>
-      <div class="col-md-4">
-        <h2>Mision</h2>
-        <p>En Motor Town nos destacamos por nuestro exelente trato a los clientes y nuestro compromiso con el medio ambiente.</p>
+      <div class="col-2 ml-2 mr-2">
+        <%= image_tag "quality-icon.png", class: "about-icon", alt: "Quality icon"%>
+        <h4>CALIDAD</h4>
+        <p>Nos preocupamos por tener las mejores marcas en accesorios y servicios a los mejores precios</p>
         <p>
           <%= link_to "Ver detalles &raquo;".html_safe,
           welcome_service_path,
-          class: "btn btn-secondary",
+          class: "btn btn-dark",
           role: "button"
           %>
         </p>
       </div>
+
     </div>
-    </div> <!-- /container -->
-    <hr>
+
+    
+  </div>
+
+
+  <!-- ***************** END ABOUT SECTION *****************  -->
+
+  <!-- ***************** LOCATION SECTION *****************  -->
+
+
     <div class="container" id="location">
       <h1 class="display-4">Horario</h1>
       <div class="row">
@@ -74,10 +99,19 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <%= image_tag "location.png", class: "img-fluid" %>
+          
+          <%= link_to "https://www.google.co.cr/maps/place/Motor+Town/@9.9510106,-84.1138038,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0fb4ffec9272d:0x50a953eb0b44805c!8m2!3d9.9510053!4d-84.1116151?hl=en", target: "_blank" do %>
+            <%= image_tag "location.png", class: "img-fluid", alt: "Direccion de Motor Town"%>
+          <% end %>
+
         </div>
       </div>
     </div>
+
+    <!-- ***************** END LOCATION SECTION *****************  -->
+    
+    <!-- ***************** CONTACT SECTION *****************  -->
+
     <hr>
     <div class="container" id="contact">
       <h1 class="display-4">Contactenos</h1>
@@ -97,4 +131,7 @@
       <%= render "contacts/new" %>
       
     </div>
+
+    <!-- ***************** END CONTACT SECTION *****************  -->
+
   </main>
