@@ -52,8 +52,26 @@
   <body>
     <%= yield %>
   </body>
-  <footer class="container">
-    <hr>
-    <p>&copy; Motor Town 2017</p>
+
+  <footer class="container-fluid text-center custom-footer">
+
+    <div class="row justify-content-center">
+      <div class="col-sm-1 welcome-icon">
+        <%= link_to "https://www.facebook.com/motortowncr",  target: "_blank" do %>
+          <%= image_tag "facebook-icon.png", class: "social-media-icon", alt: "Facebook icon"%>
+        <% end %>
+      </div>
+      <div class="col-sm-1 welcome-icon">
+        <%= link_to "https://www.instagram.com/motortowncr/", class: "social-media-icon", target: "_blank" do %>
+          <%= image_tag "instagram-icon.png", class: "social-media-icon", alt: "Instagram icon"%>
+        <% end %>      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <p>&copy; Motor Town 2017 - 2018 <br>
+        <small>Creado por: <a target="_blank" href="http://germanosta.com/">gemanosta.com</a></small></p>
+      </div>
+    </div>
   </footer>
+
 </html>
