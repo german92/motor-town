@@ -1,15 +1,18 @@
 @import "/*";
 @import "bootstrap";
 
+.custom-navbar {
+  background-color: #232222;
 
-    .motor-town {
-      color: #ff0000;
-      font-weight: bold;
-      font-size: 32px;
-      padding: 0px 8px 8px 10px;
-    }
+  .motor-town {
+    color: #ff0000 !important;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0px 8px 8px 10px;
+  }
 
-    .motor-town:hover {
-      color: #ffffff;
-      text-decoration: none;
-    }
+  .motor-town:hover {
+    color: #a8a8a8 !important;
+    text-decoration: none;
+  }
+}
