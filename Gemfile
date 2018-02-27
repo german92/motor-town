@@ -57,7 +57,8 @@ gem 'recaptcha', require: 'recaptcha/rails'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 
-
+# SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration.
+gem 'sitemap_generator'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
