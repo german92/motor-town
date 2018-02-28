@@ -60,25 +60,25 @@
 
 // ********************************** END ABOUT SECTION **********************************
 
+.service-page {
+  background-image: image-url("engine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
 
 .static-page {
-  padding-top: 140px;
-
+  padding-top: 80px;
 }
 
-.store-info {
-  padding-bottom: 15px;
+.info-description {
+  padding: 50px 0px 140px 0px;
 }
 
-.info-image {
-  height: 190px;
-  width: 240px;
-}
 
-.introduction-text {
-  margin: auto;
-}
 
-.introduction-information {
-  margin-top: 40px;
-}
+
+
+
+
