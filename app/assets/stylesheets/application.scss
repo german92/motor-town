@@ -32,3 +32,9 @@
     color: inherit;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .custom-footer {
+    height: 220px;
+  }
+}
