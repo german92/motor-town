@@ -60,6 +60,22 @@
 
 // ********************************** END ABOUT SECTION **********************************
 
+.store-page {
+  background-image: image-url("tire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+.garage-page {
+  background-image: image-url("brakes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
 .service-page {
   background-image: image-url("engine.jpg");
   background-size: cover;
@@ -68,13 +84,7 @@
   color: #FFFFFF;
 }
 
-.store-page {
-  background-image: image-url("tire.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #FFFFFF;
-}
+
 
 .static-page {
   padding-top: 80px;
