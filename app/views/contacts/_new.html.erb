@@ -1,17 +1,17 @@
 <%= simple_form_for @contact do |f| %>
-  <%= f.input :name, required: true, label: "Nombre y Apellido" %>
-  <%= f.input :email, required: true %>
-  <%= f.input :contact_number, required: true, label: "Numero de telefono" %>
-  <%= f.input :message, required: true, label: "Mensaje" %>
+  <%= f.input :name, required: true, label: "Nombre y Apellido(s):" %>
+  <%= f.input :email, required: true, label: "Correo Electr&oacute;nico:".html_safe %>
+  <%= f.input :contact_number, required: true, label: "N&uacute;mero de Telefono:".html_safe %>
+  <%= f.input :message, required: true, label: "Mensaje:" %>
   <div class= "hidden">
     <%= f.input :nickname, :hint => 'Leave this field blank!' %>
   </div>
 
-  <small class="form-text text-muted">Asegurese de llenar la sigiente casilla.</small>
+  <small class="form-text text-muted">Aseg&uacute;rese de llenar la sigiente casilla</small>
 
   <%= recaptcha_tags hl: 'es'%>
   
   <br/>
 
-  <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+  <%= f.button :submit, 'Enviar mensaje', :class=> "btn btn-dark" %>
 <% end %>
