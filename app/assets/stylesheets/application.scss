@@ -2,28 +2,21 @@
 @import "bootstrap";
 
 .custom-navbar {
-  background-color: #232222;
+  background-color: #383737;
   color: white;
 
   a {
     color: inherit;
   }
 
-  .motor-town {
-    color: #ff0000 !important;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 0px 8px 8px 10px;
+  .motor-town-logo {
+    padding: 8px 25px 5px 20px;
   }
 
-  .motor-town:hover {
-    color: #a8a8a8 !important;
-    text-decoration: none;
-  }
 }
 
 .custom-footer {
-  background-color: #232222;
+  background-color: #383737;
   color: white;
   height: 160px;
   padding-top: 30px;
