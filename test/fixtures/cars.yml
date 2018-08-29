@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  model: MyString
+  year: 1
+  license_plate: MyString
+  last_service_id: 1
+  client_id: 1
+
+two:
+  brand: MyString
+  model: MyString
+  year: 1
+  license_plate: MyString
+  last_service_id: 1
+  client_id: 1

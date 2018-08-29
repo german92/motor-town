@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  date: 2018-08-26 09:43:11
+  additional_details: MyString
+  client_id: 1
+  car_id: 1
+
+two:
+  type: 
+  date: 2018-08-26 09:43:11
+  additional_details: MyString
+  client_id: 1
+  car_id: 1
